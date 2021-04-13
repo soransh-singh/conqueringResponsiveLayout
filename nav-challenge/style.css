@@ -73,11 +73,21 @@ header {
     padding: .5em 0;
 }
 
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo__img{
+  padding-right: 2rem;
+}
+
 .nav__list {
     margin: 0;
     padding: .5rem 0;
     list-style: none;
     display: flex;
+
 }
 
 .nav__item{
@@ -138,4 +148,23 @@ header {
     text-align: center;
     color: #fff;
     background-color: #136c72;
+}
+
+@media (max-width: 600px){
+
+  .nav{
+    display: block;
+  }
+  .row{
+    display: block;
+  }
+  .hero__text,
+  .hero__img,
+  .primary-content,
+  .sidebar{
+    width: 100%;
+  }
+  .hero__img{
+    margin-top: 2rem;
+  }
 }
